@@ -1,0 +1,29 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+
+    ArrayList<Integer> num = new ArrayList<Integer>();
+
+    Scanner mypa = new Scanner(System.in);
+    int hup = mypa.nextInt();
+    num.add(hup);
+
+
+    while (true){
+      Scanner mysca = new Scanner(System.in);
+      int nup = mysca.nextInt();
+      int lastNum = num.get(num.size() - 1);
+      if (nup>lastNum){
+        System.out.println(nup + " " + "increased");
+      }
+      else {
+          System.out.println(nup + " " + "decreased");
+        }
+      num.add(nup);
+      
+
+
+    }
+  }
+}
